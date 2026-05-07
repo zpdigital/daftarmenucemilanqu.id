@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Cemilanqu.id</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+
+body{
+  background:#ecfeff;
+  font-family:sans-serif;
+}
+
+.card{
+  background:white;
+  border-radius:28px;
+  padding:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  margin-bottom:24px;
+}
+
+.menu-btn{
+  background:#06b6d4;
+  color:white;
+  padding:10px 18px;
+  border-radius:14px;
+  font-weight:bold;
+  min-width:100px;
+}
+
+.qty-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.qty-btn{
+  width:34px;
+  height:34px;
+  border-radius:999px;
+  color:white;
+  font-weight:bold;
+  font-size:18px;
+}
+
+.minus{
+  background:#ef4444;
+}
+
+.plus{
+  background:#22c55e;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="max-w-6xl mx-auto p-4">
+
+<!-- HEADER -->
+<div class="bg-cyan-600 text-white rounded-[30px] p-6 text-center shadow-xl">
+
+<img src="logo.png"
+class="w-28 h-28 mx-auto bg-white rounded-full p-2 object-contain mb-4">
+
+<h1 class="text-5xl font-extrabold">
+CEMILANQU.ID
+</h1>
+
+<p class="mt-2 text-lg">
+Sweet & Yummy
+</p>
+
+<p>
+facebook : cemilanqu.id
+</p>
+
+<p>
+WhatsApp : 0897 4246 330
+</p>
+
+</div>
+
+<!-- BANANA -->
+<div class="card mt-6 border-4 border-yellow-300">
+
+<img src="banana-menu.jpg"
+class="w-full h-64 object-cover rounded-2xl mb-5">
+
+<h2 class="text-3xl font-bold text-yellow-500 mb-5">
+🍌 BANANA
+</h2>
+
+<div class="space-y-4">
+
+<div class="flex justify-between items-center">
+<span>Banana Nugget - <b>16K</b></span>
+<div id="banana-nugget"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Bananaroll - <b>16K</b></span>
+<div id="bananaroll"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Bananaroll Kecil - <b>11K</b></span>
+<div id="bananaroll-kecil"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Pisang Bantal - <b>16K</b></span>
+<div id="pisang-bantal"></div>
+</div>
+
+</div>
+
+<h3 class="font-bold mt-6 mb-4 text-cyan-700">
+Varian
+</h3>
+
+<div class="space-y-4">
+
+<div class="flex justify-between items-center">
+<span>Varian Coklat</span>
+<div id="varian-coklat"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Varian Tiramisu</span>
+<div id="varian-tiramisu"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Varian Strawberry</span>
+<div id="varian-strawberry"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Varian Vanilla</span>
+<div id="varian-vanilla"></div>
+</div>
+
+</div>
+
+<h3 class="font-bold mt-6 mb-4 text-cyan-700">
+Toping
+</h3>
+
+<div class="space-y-4">
+
+<div class="flex justify-between items-center">
+<span>Toping Keju</span>
+<div id="toping-keju"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Toping Milo</span>
+<div id="toping-milo"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Toping Oreo</span>
+<div id="toping-oreo"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Toping Meses</span>
+<div id="toping-meses"></div>
+</div>
+
+</div>
+<h3 class="font-bold mt-6 mb-4 text-cyan-700">
+Extra Toping
+</h3>
+
+<div class="space-y-4">
+
+<div class="flex justify-between items-center">
+<span>Extra Toping - <b>6K</b></span>
+<div id="extra-toping"></div>
+</div>
+
+</div>
+
+</div>
+
+<!-- JASUKE -->
+<div class="card border-4 border-cyan-300">
+
+<img src="jasuke.jpg"
+class="w-full h-64 object-cover rounded-2xl mb-5">
+
+<h2 class="text-3xl font-bold text-cyan-600 mb-5">
+🌽 JASUKE
+</h2>
+
+<h3 class="font-bold mb-4">
+Mozarella
+</h3>
+
+<div class="space-y-4">
+
+<div class="flex justify-between items-center">
+<span>Jasuke Mozarella Keju - <b>19K</b></span>
+<div id="jasuke-keju"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Jasuke Choco Crunchy - <b>21K</b></span>
+<div id="jasuke-choco"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Jasuke Milo - <b>21K</b></span>
+<div id="jasuke-milo"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Jasuke Oreo - <b>21K</b></span>
+<div id="jasuke-oreo"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Jasuke Meses - <b>21K</b></span>
+<div id="jasuke-meses"></div>
+</div>
+
+</div>
+
+<h3 class="font-bold mt-6 mb-4">
+NON MOZARELLA
+</h3>
+
+<div class="space-y-4">
+
+<div class="flex justify-between items-center">
+<span>Non Moza Keju - <b>16K</b></span>
+<div id="nonmoza-keju"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Non Moza Choco Crunchy - <b>18K</b></span>
+<div id="nonmoza-choco"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Non Moza Milo - <b>18K</b></span>
+<div id="nonmoza-milo"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Non Moza Oreo - <b>18K</b></span>
+<div id="nonmoza-oreo"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Non Moza Meses - <b>18K</b></span>
+<div id="nonmoza-meses"></div>
+</div>
+
+</div>
+
+<h3 class="font-bold mt-6 mb-4">
+Extra
+</h3>
+
+<div class="space-y-4">
+
+<div class="flex justify-between items-center">
+<span>Extra Toping - <b>6K</b></span>
+<div id="extra-toping"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Extra Mozarella - <b>8K</b></span>
+<div id="extra-mozarella"></div>
+</div>
+
+</div>
+
+</div>
+
+<!-- ES KEPAL -->
+<div class="card border-4 border-amber-300">
+
+<img src="eskepal.jpg"
+class="w-full h-64 object-cover rounded-2xl mb-5">
+
+<h2 class="text-3xl font-bold text-amber-600 mb-5">
+🍫 ES KEPAL MILO
+</h2>
+
+<div class="flex justify-between items-center">
+
+<span>
+Es Kepal Milo - <b>16K</b>
+</span>
+
+<div id="eskepal"></div>
+
+</div>
+
+<h3 class="font-bold mt-6 mb-4">
+Free 2 Toping
+</h3>
+
+<div class="space-y-4">
+
+<div class="flex justify-between items-center">
+<span>Toping Koko Krunch</span>
+<div id="koko-krunch"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Toping Keju</span>
+<div id="eskepal-keju"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Toping Milo</span>
+<div id="eskepal-milo"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Toping Oreo</span>
+<div id="eskepal-oreo"></div>
+</div>
+
+</div>
+
+</div>
+
+<!-- KENTANG -->
+<div class="card border-4 border-pink-300">
+
+<img src="kentang.jpg"
+class="w-full h-64 object-cover rounded-2xl mb-5">
+
+<h2 class="text-3xl font-bold text-pink-500 mb-5">
+🍟 CEMILAN LAIN
+</h2>
+
+<div class="flex justify-between items-center">
+
+<span>
+Kentang Saos Mayo - <b>17K</b>
+</span>
+
+<div id="kentang"></div>
+
+</div>
+
+</div>
+
+<!-- MINUMAN -->
+<div class="card border-4 border-green-300">
+
+<img src="minuman.jpg"
+class="w-full h15 object-cover rounded-2xl mb-5">
+
+<h2 class="text-3xl font-bold text-green-500 mb-5">
+🥤 MINUMAN
+</h2>
+
+<div class="space-y-4">
+
+<div class="flex justify-between items-center">
+<span>Ice Milo Dino - <b>16K</b></span>
+<div id="milo-dino"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Ice Coffe Cappucino - <b>11K</b></span>
+<div id="cappucino"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Ice Coffe Aren Late - <b>11K</b></span>
+<div id="aren-latte"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Ice Coffe Vanilla Late - <b>11K</b></span>
+<div id="vanilla-latte"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Ice Chocolate - <b>11K</b></span>
+<div id="ice-choco"></div>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Ice Matcha Late - <b>11K</b></span>
+<div id="matcha"></div>
+</div>
+
+</div>
+
+</div>
+
+<!-- KERANJANG -->
+<div class="card border-4 border-cyan-400">
+
+<div class="flex justify-between items-center mb-4">
+
+<h2 class="text-3xl font-bold text-cyan-700">
+🛒 Keranjang
+</h2>
+
+<span id="cart-count"
+class="bg-pink-500 text-white px-4 py-1 rounded-full font-bold">
+0
+</span>
+
+</div>
+
+<div id="cart-items"></div>
+
+<div class="flex justify-between mt-6 text-xl font-bold">
+
+<span>Total</span>
+
+<span id="cart-total">
+Rp0K
+</span>
+
+</div>
+
+<div class="mt-5">
+
+<label class="font-bold text-cyan-700 block mb-2">
+Nama Customer *
+</label>
+
+<input
+type="text"
+id="customer-name"
+placeholder="Masukkan nama anda"
+class="w-full border-2 border-cyan-300 rounded-2xl p-3">
+
+</div>
+
+<button
+onclick="checkoutWhatsApp()"
+class="w-full bg-green-500 hover:bg-green-600 text-white py-4 rounded-2xl mt-5 font-bold text-lg">
+
+Checkout WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+let cart = [];
+
+const products = [
+
+['banana-nugget','Banana Nugget',16],
+['bananaroll','Bananaroll',16],
+['bananaroll-kecil','Bananaroll Kecil',11],
+['pisang-bantal','Pisang Bantal',16],
+
+['varian-coklat','Varian Coklat',0],
+['varian-tiramisu','Varian Tiramisu',0],
+['varian-strawberry','Varian Strawberry',0],
+['varian-vanilla','Varian Vanilla',0],
+
+['toping-keju','Toping Keju',6],
+['toping-milo','Toping Milo',6],
+['toping-oreo','Toping Oreo',6],
+['toping-meses','Toping Meses',6],
+
+['jasuke-keju','Jasuke Mozarella Keju',19],
+['jasuke-choco','Jasuke Choco Crunchy',21],
+['jasuke-milo','Jasuke Milo',21],
+['jasuke-oreo','Jasuke Oreo',21],
+['jasuke-meses','Jasuke Meses',21],
+
+['nonmoza-keju','Non Moza Keju',16],
+['nonmoza-choco','Non Moza Choco Crunchy',18],
+['nonmoza-milo','Non Moza Milo',18],
+['nonmoza-oreo','Non Moza Oreo',18],
+['nonmoza-meses','Non Moza Meses',18],
+
+['extra-toping','Extra Toping',6],
+['extra-mozarella','Extra Mozarella',8],
+
+['eskepal','Es Kepal Milo',16],
+['koko-krunch','Toping Koko Krunch',0],
+['eskepal-keju','Toping Keju Es Kepal',0],
+['eskepal-milo','Toping Milo Es Kepal',0],
+['eskepal-oreo','Toping Oreo Es Kepal',0],
+
+['kentang','Kentang Saos Mayo',17],
+
+['milo-dino','Ice Milo Dino',16],
+['cappucino','Ice Coffe Cappucino',11],
+['aren-latte','Ice Coffe Aren Late',11],
+['vanilla-latte','Ice Coffe Vanilla Late',11],
+['ice-choco','Ice Chocolate',11],
+['matcha','Ice Matcha Late',11],
+
+];
+
+products.forEach(p=>{
+renderButton(p[0],p[1],p[2]);
+});
+
+function renderButton(id,name,price){
+
+const item = cart.find(i=>i.name===name);
+
+if(!item){
+
+document.getElementById(id).innerHTML = `
+<button
+onclick="addToCart('${name}',${price})"
+class="menu-btn">
+
+Tambah
+
+</button>
+`;
+
+}else{
+
+document.getElementById(id).innerHTML = `
+
+<div class="qty-box">
+
+<button
+onclick="decreaseQty('${name}')"
+class="qty-btn minus">
+
+-
+
+</button>
+
+<span class="font-bold text-lg">
+
+${item.qty}
+
+</span>
+
+<button
+onclick="increaseQty('${name}')"
+class="qty-btn plus">
+
++
+
+</button>
+
+</div>
+`;
+
+}
+
+}
+
+function refreshButtons(){
+
+products.forEach(p=>{
+renderButton(p[0],p[1],p[2]);
+});
+
+}
+
+function addToCart(name,price){
+
+const existing = cart.find(i=>i.name===name);
+
+if(existing){
+
+existing.qty++;
+
+}else{
+
+cart.push({
+name,
+price,
+qty:1
+});
+
+}
+
+updateCart();
+refreshButtons();
+
+}
+
+function increaseQty(name){
+
+const item = cart.find(i=>i.name===name);
+
+if(item){
+item.qty++;
+}
+
+updateCart();
+refreshButtons();
+
+}
+
+function decreaseQty(name){
+
+const item = cart.find(i=>i.name===name);
+
+if(item){
+
+item.qty--;
+
+if(item.qty<=0){
+
+cart = cart.filter(i=>i.name!==name);
+
+}
+
+}
+
+updateCart();
+refreshButtons();
+
+}
+
+function updateCart(){
+
+const totalItems =
+cart.reduce((sum,item)=>sum+item.qty,0);
+
+document.getElementById('cart-count').innerText =
+totalItems;
+
+let total = 0;
+
+const cartItems =
+document.getElementById('cart-items');
+
+cartItems.innerHTML = '';
+
+cart.forEach(item=>{
+
+total += item.price * item.qty;
+
+cartItems.innerHTML += `
+
+<div class="border-b py-3">
+
+<div class="flex justify-between">
+
+<span>${item.name}</span>
+
+<span>Rp${item.price * item.qty}K</span>
+
+</div>
+
+</div>
+
+`;
+
+});
+
+document.getElementById('cart-total').innerText =
+'Rp'+total+'K';
+
+}
+
+function checkoutWhatsApp(){
+
+const customer =
+document.getElementById('customer-name').value;
+
+if(customer.trim()===''){
+
+alert('Nama customer wajib di isi');
+return;
+
+}
+
+if(cart.length===0){
+
+alert('Keranjang kosong');
+return;
+
+}
+
+let total = 0;
+
+let message =
+`Halo Cemilanqu.id%0A%0A`;
+
+message +=
+`Nama Customer : ${customer}%0A`;
+
+message +=
+`%0ASaya ingin pesan:%0A`;
+
+cart.forEach((item,index)=>{
+
+total += item.price * item.qty;
+
+message +=
+`%0A${index+1}. ${item.name} x${item.qty} - Rp${item.price * item.qty}K`;
+
+});
+
+message +=
+`%0A%0ATotal : Rp${total}K`;
+
+window.open(
+`https://wa.me/628974246330?text=${message}`,
+'_blank'
+);
+
+}
+
+</script>
+
+</body>
+</html>
